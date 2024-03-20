@@ -194,7 +194,7 @@
       <div class="desktop4-container">
         <div class="desktop4-desktop4">
           <div class="desktop4-group1">
-            <span class="desktop4-text"><span><a href="/hackathon/sign in/index.html">Sign In</a></span></span>
+            <span class="desktop4-text"><span>Sign In</span></span>
             <span class="desktop4-text02"><span><a href="index.html">Order Now</a></span></span>
             <span class="desktop4-text04"><span><a href="contact us.html">Contact Us</a></span></span>
             <span class="desktop4-text06"><span>Samples</span></span>
@@ -207,7 +207,7 @@
             alt="Rectangle112012"
             class="desktop4-rectangle11"
           />
-          <span class="desktop4-text12"><span>ORDER NOW</span></span>
+          <span class="desktop4-text12"><span><a href="">ORDER NOW</a></span></span>
           <img
             src="public/external/rectangle81548-oydr-200h.png"
             alt="Rectangle81548"
@@ -223,16 +223,14 @@
             alt="Rectangle141556"
             class="desktop4-rectangle14"
           />
-          <span class="desktop4-text14">
+          <span class="desktop4-text14" id="medium-orders-button">
             <span>Medium Orders</span>
             <br />
             <span></span>
           </span>
-          <span class="desktop4-text18"><span>Custom Orders</span></span>
-          <span class="desktop4-text20">
+          <span class="desktop4-text18" id="custom-orders-button"><span>Custom Orders</span></span>
+          <span class="desktop4-text20" id="bulk-orders-button">
             <span>Bulk Orders</span>
-            <br />
-            <span></span>
           </span>
           <span class="desktop4-text24"><span>&gt;=100</span></span>
           <span class="desktop4-text26"><span>&lt;=50</span></span>
@@ -245,12 +243,11 @@
             alt="Rectangle161562"
             class="desktop4-rectangle16"
           />
-          <span class="desktop4-text32"><span>Brand Name :</span></span>
-          <img
-            src="public/external/rectangle176414-vmrf-200h.png"
-            alt="Rectangle176414"
-            class="desktop4-rectangle17"
-          />
+          <div class="details-box">
+            <span class="desktop4-text32"><span>Brand Name :</span></span>
+            <input type="text" id="brand-name-input" class="brand-name-input">
+            <img src="public/external/rectangle176414-vmrf-200h.png" alt="Rectangle176414" class="desktop4-rectangle17">
+          </div>        
           <span class="desktop4-text34"><span>Number of Pieces :</span></span>
           <span class="desktop4-text36"><span>Brand Logo :</span></span>
           <span class="desktop4-text38">
@@ -274,7 +271,10 @@
               alt="Rectangle171571"
               class="desktop4-rectangle171"
             />
-            <span class="desktop4-text42"><span>Upload</span></span>
+            <span class="desktop4-text42"><label for="file-upload" class="custom-file-upload">
+                <span>Upload</span>
+                <input id="file-upload" type="file" accept="image/*">
+              </label></span>
           </div>
           <span class="desktop4-text44">
             <span>Ingredients :</span>
@@ -307,7 +307,11 @@
             alt="Rectangle171577"
             class="desktop4-rectangle172"
           />
-          <span class="desktop4-text54"><span>Upload</span></span>
+          <span class="desktop4-text54"><label for="file-upload" class="custom-file-upload">
+            <span>Upload</span>
+            <input id="file-upload" type="file" accept="image/*">
+          </label>
+          </span>
           <span class="desktop4-text56">
             <span>Tell us how you want your packaging to look</span>
           </span>
@@ -327,5 +331,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
